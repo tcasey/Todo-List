@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Todo-List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main id="main-container">
+    <nav class="l-header">
+      <h1>Todo-List</h1>
+    </nav>
+    <form class="l-form" id="newTaskForm">
+      <label>New Item</label>
+      <input id="newItemInput" placeholder="new task" />
+      <button class="l-btn-main" id="saveNewItem">Save</button>
+      <button class="l-btn-danger" id="cancel">Cancel</button>
+    </form>
+
+    <div class='new-item-header'>
+      <button href="#" class="pull-right pencil l-btn-success" id="newListItem" style="">New</button>
+    </div>
+
+    <div id="newList">
+      New List
+    </div>
+
+    <div class="panel">
+      In Progress
+      <ul class="list-group" id="currentList"></ul>
+    </div>
+    <div class="panel">
+      Archived
+      <ul class="list-group" id="archivedList"></ul>
+    </div>
+
+
+  </main>
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="code.js"></script>
+  </script>
+</body>
+
+</html>
